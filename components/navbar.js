@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 function Navbar() {
 
     let history=useRouter()
-    // 
   return (
     <div className={` py-5 backdrop-blur-sm bg-[rgba(255,255,255,0.8)]  fixed top-0 left-0 w-full shadow-sm`}>
         

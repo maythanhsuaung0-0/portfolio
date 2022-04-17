@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Home() {
 
   return (
-    <div className={``}>
+    <div>
       <div className=" w-10/12 lg:w-1/2 m-auto">
         <Navbar/>
         {/* info: hero section */}
@@ -26,10 +26,7 @@ export default function Home() {
         <div className=" pt-12 pb-24">
             <h2 className=" text-3xl">Featured Projects</h2>
             <div className="mt-5 grid gap-3 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
+              <Card project={'https://github.com/maythanhsuaung0-0/social-website'} pj_name={'Social Website'} pj_note={'my testing social website'} lan={'Javascript'}/>
             </div>
         </div>
        
