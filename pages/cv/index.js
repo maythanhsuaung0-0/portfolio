@@ -9,7 +9,7 @@ function ResumePage() {
       <div className="w-10/12 lg:w-1/2 m-auto">
         <Navbar/>
         {/* info: hero section */}
-        <div className='py-5 pt-24'>
+        <div className='pb-5 pt-24'>
             <h3 className=" text-3xl">Work Experiments</h3>
             <div className='mt-5 grid gap-5 '>
                 <Alignment year={'2019-2020'} place={'Myanmar'}
@@ -21,7 +21,7 @@ function ResumePage() {
 
             </div>
         </div>
-        <div className=" py-12">
+        <div className=" pt-5 pb-12">
             <h2 className=" text-3xl">Team Projects in Work</h2>
             <div className="mt-5 grid gap-3">
              <Alignment place={'THtwin Innovation Lab'} year={'2019'} pj={'https://shaniit.org/'} ttl={`Shan Institute of Technology `}>
