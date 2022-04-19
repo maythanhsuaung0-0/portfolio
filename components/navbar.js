@@ -1,13 +1,15 @@
 import React,{useState} from 'react'
 import "@fontsource/inter";
 import { useRouter } from 'next/router';
+import Drawer from './drawer';
 function Navbar() {
-
-    let history=useRouter()
+  let history=useRouter()
+  const [isOpen, setIsOpen] = useState(false)
   return (
+      <>
     <div className={` py-5 backdrop-blur-sm bg-[rgba(255,255,255,0.8)]  fixed top-0 left-0 w-full shadow-sm`}>
         
-        <nav className='w-10/12 lg:w-1/2 m-auto flex justify-between'>
+        <nav className='w-10/12 lg:w-1/2 2xl:w-2/5 m-auto flex justify-between'>
             <div onClick={()=>history.push('/')} className='grid self-center cursor-pointer'>May</div>
             <ul className='hidden list-none lg:flex flex-row gap-8'>
                 
@@ -42,14 +44,16 @@ function Navbar() {
             </div></label>
             <input className='invisible'   type={'radio'} id='darkmode' value={'darkmode'} name='mode'/></div>
             </div>
-            <div className='lg:hidden grid place-items-center'>
+            <div onClick={()=>setIsOpen(true)} className='lg:hidden grid place-items-center'>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
         </div>
         </nav>
-        
+        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}/>
     </div>
+  
+    </>
   )
 }
 
