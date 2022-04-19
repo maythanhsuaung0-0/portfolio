@@ -15,26 +15,30 @@ function Navbar() {
             <Link href={'/'}>May</Link>
             </div>
             <ul className='hidden list-none lg:flex flex-row gap-8'>
-                
+            <li className='self-center'>
+            <div  className={`${history.pathname==='/'?'active-link font-bold':''} decorate cursor-pointer`}>
+            <Link href={'/'}>Home</Link>
+            </div>
+            </li>
                 <li className='self-center'>
-                <div  className=' decorate cursor-pointer'>
+                <div  className={`${history.pathname==='/about'?'active-link font-bold':''} decorate cursor-pointer`}>
                 <Link href={'/about'} >About</Link>
                 </div>
                 </li>
                 <li className='self-center'>
-                <div  className=' decorate cursor-pointer'>
+                <div  className={`${history.pathname==='/cv'?'active-link font-bold':''} decorate cursor-pointer`}>
                 <Link href={'/cv'}>Experiment</Link>
                 </div>
                 </li>
-                <li className='self-center'>
-                    <div  className=' decorate cursor-pointer'>
-                    <Link href={'/#contact'}>Contact</Link>
+                {/* <li className='self-center'>
+                    <div  className={`${history.pathname==='/blogs'?'active-link font-bold':''} decorate cursor-pointer`}>
+                    <Link href={'/blogs'}>Blogs</Link>
                     </div>
-                </li>
+                </li> */}
             </ul>
             <div className='flex ml-auto lg:ml-0 mr-3 lg:mr-0 h-9 self-center'>
                <div> <label htmlFor='lightmode'>
-                <div className={`w-8 h-8 grid place-items-center bg-indigo-500  rounded-full cursor-pointer`}>
+                <div className={`w-8 h-8 grid place-items-center   rounded-full cursor-pointer`}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -43,11 +47,12 @@ function Navbar() {
             </label>
             <input  type={'radio'} id='lightmode' value={'lightmode'} name='mode' className=' invisible'/>
             </div>
-            <div><label htmlFor='darkmode'><div className={`w-8 h-8 grid place-items-center  rounded-full cursor-pointer`}>
+            <div>
+                {/* <label htmlFor='darkmode'><div className={`w-8 h-8 grid place-items-center  rounded-full cursor-pointer`}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
             </svg>
-            </div></label>
+            </div></label> */}
             <input className='invisible'   type={'radio'} id='darkmode' value={'darkmode'} name='mode'/></div>
             </div>
             <div onClick={()=>setIsOpen(true)} className='lg:hidden grid place-items-center'>

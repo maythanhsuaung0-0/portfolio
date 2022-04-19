@@ -23,16 +23,12 @@ function Drawer({isOpen,setIsOpen}) {
                 <Link href={'/about'}>About</Link>
                 </div>
                 </li>
-                <li className=' hover:bg-gray-100 w-full text-center py-2 text-lg'>
+                <li className=' hover:bg-gray-100 w-full mb-auto text-center py-2 text-lg'>
                 <div className='cursor-pointer'>
                 <Link href={'/cv'}>Experiment</Link>
                 </div>
                 </li>
-                <li className=' hover:bg-gray-100 w-full text-center py-2 text-lg mb-auto'>
-                    <div  className='cursor-pointer'>
-                    <Link href={'/#contact'}>Contact</Link>
-                    </div>
-                </li>
+
         </ul>
     </div>
         )

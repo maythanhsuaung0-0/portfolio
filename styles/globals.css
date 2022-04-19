@@ -13,24 +13,27 @@
 }
 @keyframes transforming {
   0%{
-    @apply bg-gradient-to-r from-indigo-200 to-indigo-600
+    @apply bg-gradient-to-r from-indigo-300 to-indigo-600
   }
   30%{
-    @apply bg-gradient-to-b from-indigo-200 to-indigo-600
+    @apply bg-gradient-to-b from-indigo-300 to-indigo-600
   }
   60%{
-    @apply bg-gradient-to-l from-indigo-200 to-indigo-600
+    @apply bg-gradient-to-l from-indigo-300 to-indigo-600
   }
   100%{
-    @apply bg-gradient-to-t from-indigo-200 to-indigo-600
+    @apply bg-gradient-to-t from-indigo-300 to-indigo-600
   }
 }
 .decorate{
   @apply hover:animate-[text-deco_1s_ease-in-out_infinite] hover:text-transparent bg-clip-text text-black
 }
+.active-link{
+  @apply bg-gradient-to-r from-indigo-300 to-indigo-600 text-transparent bg-clip-text
+}
 @keyframes text-deco {
   from{
-    @apply bg-gradient-to-r from-indigo-200 to-indigo-600
+    @apply bg-gradient-to-r from-indigo-300 to-indigo-600
   }
   to{
     @apply bg-gradient-to-l  from-indigo-600 to-indigo-200
