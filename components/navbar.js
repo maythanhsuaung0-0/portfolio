@@ -2,28 +2,34 @@ import React,{useState} from 'react'
 import "@fontsource/inter";
 import { useRouter } from 'next/router';
 import Drawer from './drawer';
+import Link from 'next/link';
 function Navbar() {
   let history=useRouter()
   const [isOpen, setIsOpen] = useState(false)
   return (
       <>
-    <div className={` py-5 backdrop-blur-sm bg-[rgba(255,255,255,0.8)]  fixed top-0 left-0 w-full shadow-sm`}>
+    <div className={` py-5 backdrop-blur-sm bg-[rgba(255,255,255,0.8)] z-50  fixed top-0 left-0 w-full shadow-sm`}>
         
         <nav className='w-10/12 lg:w-1/2 2xl:w-2/5 m-auto flex justify-between'>
-            <div onClick={()=>history.push('/')} className='grid self-center cursor-pointer'>May</div>
+            <div  className='grid self-center cursor-pointer'>
+            <Link href={'/'}>May</Link>
+            </div>
             <ul className='hidden list-none lg:flex flex-row gap-8'>
                 
                 <li className='self-center'>
-                <div onClick={()=>history.push('/about')} className=' hover:animate-bounce cursor-pointer'>About</div>
+                <div  className=' decorate cursor-pointer'>
+                <Link href={'/about'} >About</Link>
+                </div>
                 </li>
                 <li className='self-center'>
-                <div onClick={()=>history.push('/blogs')} className=' hover:animate-bounce cursor-pointer'>Blogs</div>
+                <div  className=' decorate cursor-pointer'>
+                <Link href={'/cv'}>Experiment</Link>
+                </div>
                 </li>
                 <li className='self-center'>
-                <div onClick={()=>history.push('/cv')} className=' hover:animate-bounce cursor-pointer'>My CV</div>
-                </li>
-                <li className='self-center'>
-                    <div onClick={()=>history.push('/#contact')} className=' hover:animate-bounce cursor-pointer'>Contact</div>
+                    <div  className=' decorate cursor-pointer'>
+                    <Link href={'/#contact'}>Contact</Link>
+                    </div>
                 </li>
             </ul>
             <div className='flex ml-auto lg:ml-0 mr-3 lg:mr-0 h-9 self-center'>

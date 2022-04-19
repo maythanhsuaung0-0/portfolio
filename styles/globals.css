@@ -7,3 +7,32 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 }
+.cus-animate{
+  @apply relative hover:bg-white hover:text-indigo-600 before:content-[''] before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:rounded-lg 
+ before:hover:animate-[transforming_2s_ease-in_infinite] from-indigo-600 to-white before:absolute before:-top-[2px] before:-left-[2px] before:-z-20 
+}
+@keyframes transforming {
+  0%{
+    @apply bg-gradient-to-r from-indigo-200 to-indigo-600
+  }
+  30%{
+    @apply bg-gradient-to-b from-indigo-200 to-indigo-600
+  }
+  60%{
+    @apply bg-gradient-to-l from-indigo-200 to-indigo-600
+  }
+  100%{
+    @apply bg-gradient-to-t from-indigo-200 to-indigo-600
+  }
+}
+.decorate{
+  @apply hover:animate-[text-deco_1s_ease-in-out_infinite] hover:text-transparent bg-clip-text text-black
+}
+@keyframes text-deco {
+  from{
+    @apply bg-gradient-to-r from-indigo-200 to-indigo-600
+  }
+  to{
+    @apply bg-gradient-to-l  from-indigo-600 to-indigo-200
+  }
+}

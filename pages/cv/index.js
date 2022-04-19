@@ -9,7 +9,7 @@ function ResumePage() {
       <div className="w-10/12 lg:w-1/2 m-auto">
         <Navbar/>
         {/* info: hero section */}
-        <div className='pb-5 pt-24'>
+        <div className='pb-5 pt-32'>
             <h3 className=" text-3xl">Work Experiments</h3>
             <div className='mt-5 grid gap-5 '>
                 <Alignment year={'2019-2020'} place={'Myanmar'}
