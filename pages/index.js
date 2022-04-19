@@ -37,7 +37,7 @@ export default function Home() {
       <div className=" bg-[#0F172A] text-white" id="contact">
       <div className="w-10/12 lg:w-1/2 m-auto ">
 
-        <div className=" p-5 grid gap-2">
+        <div className=" py-5 grid gap-2">
           <h6 className="text-xl mb-4">Contact Me Now!</h6>
         <div className="flex flex-col gap-3 justify-center border-b border-gray-600 pb-5">
               <div>           
