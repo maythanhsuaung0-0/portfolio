@@ -6,7 +6,7 @@ import Button from '../../components/button'
 import Footer from '../../components/footer'
 function AboutPage() {
   return (
-    <div className={` `}>
+    <div>
     <div className="w-10/12 2xl:h-screen lg:w-1/2 2xl:w-2/5 m-auto">
     <Navbar/>
       {/* info: hero section */}

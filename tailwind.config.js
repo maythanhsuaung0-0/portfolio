@@ -8,9 +8,7 @@ module.exports = {
       fontFamily: {
         'sans': 'Inter',
       },
-      animation: {
-        'bounce': 'bounce 3s linear 2',
-      }
+
     },
   },
   plugins: [],

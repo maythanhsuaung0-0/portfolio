@@ -1,13 +1,19 @@
-import React,{useState} from 'react'
-export function Themes(){
-    const [modetoggle, setModetoggle] = useState('lightmode')
-    const changeTheme=(mode)=>{
-        if(mode==='darkmode'){
-            setModetoggle('darkmode')
-            return 'border-indigo-700'
-        } else {return 'border-white'}
-    }
+// import React,{useState} from 'react'
+const themeSwitching=(mode)=>{
+ if(mode){
     return{
-        changeTheme:changeTheme
-    }
+        bg:'#fff',
+        text:'#252238',
+        navbg:'rgba(255,255,255,0.8)'
+     }
+   
+ }
+ else{
+    return{
+        bg:'#252238',
+        text:'#fff',
+        navbg:'rgba(37,34,56,0.7)'
+     }
+ }
 }
+export {themeSwitching}

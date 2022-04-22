@@ -3,11 +3,15 @@ import Button from "../components/button";
 import Card from "../components/card";
 import Navbar from "../components/navbar";
 import Link from "next/link";
+import { useTheme } from "../themecontext/theme";
+import { themeSwitching } from "../hooks/theme";
 export default function Home() {
-
+  let {mode}=useTheme()
+  let {bg,text}=themeSwitching(mode)
+  console.log(mode)
   return (
-    <div>
-      <div className=" w-10/12 lg:w-1/2 m-auto">
+    <div className={`bg-[${bg}] text-[${text}]`}>
+      <div className={`w-10/12 lg:w-1/2 m-auto `}>
         <Navbar/>
         {/* info: hero section */}
         <div className=" pt-28 py-6 2xl:py-14">
