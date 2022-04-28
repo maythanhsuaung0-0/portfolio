@@ -6,22 +6,20 @@ import Link from "next/link";
 import { useTheme } from "../themecontext/theme";
 import { themeSwitching } from "../hooks/theme";
 export default function Home() {
-  let {mode}=useTheme()
-  let {bg,text}=themeSwitching(mode)
-  console.log(mode)
+
   return (
-    <div className={`bg-[${bg}] text-[${text}]`}>
+    <div className={` dark:bg-[#1E293B] dark:text-white`}>
       <div className={`w-10/12 lg:w-1/2 m-auto `}>
         <Navbar/>
         {/* info: hero section */}
         <div className=" pt-28 py-6 2xl:py-14">
-          <h2 className=" text-6xl leading-[72px] lg:text-7xl lg:leading-[86px]">A Talented Frontend Developer <span className=" hidden lg:inline text-lg lg:pt-4 font-medium">you are looking for</span></h2>
+          <h1 className=" text-6xl leading-[72px] lg:text-7xl lg:leading-[86px]">A Talented Frontend Developer <span className=" hidden lg:inline text-lg lg:pt-4 font-medium">you are looking for</span></h1>
           <div className="text-indigo-600 text-sm flex gap-2 pt-3">
             <div><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg></div>
             3 years working experiment</div>
-          <p className="mt-5">Hi there, I&apos;m <h1 className="inline">MayThanHsu</h1>, a frontend developer who&apos;s really swift at learning and loves to code.</p>
+          <p className="mt-5">Hi there, I&apos;m <span>MayThanHsu</span>, a frontend developer who&apos;s really swift at learning and loves to code.</p>
           <Button>
           <Link href={'/cv'}>See My CV</Link>
           </Button>

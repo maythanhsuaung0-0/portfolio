@@ -26,7 +26,7 @@
   }
 }
 .decorate{
-  @apply hover:animate-[text-deco_1s_ease-in-out_infinite] hover:text-transparent bg-clip-text text-black
+  @apply hover:animate-[text-deco_1s_ease-in-out_infinite] hover:text-transparent bg-clip-text text-black  
 }
 .active-link{
   @apply bg-gradient-to-r from-indigo-300 to-indigo-600 text-transparent bg-clip-text

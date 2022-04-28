@@ -3,7 +3,7 @@ import React from 'react'
 function Alignment({children,year,ttl,place,pj=false}) {
   return (
     <div className='grid grid-cols-[15%,80%] gap-4 w-full'>
-        <div className='text-gray-600 text-sm mt-1'>{year}</div>
+        <div className='text-gray-600 dark:text-gray-300 text-sm mt-1'>{year}</div>
         <div className='grid gap-2'>
             <h5 className='text-lg'>
               {pj?<div className='flex gap-2'>
@@ -13,8 +13,8 @@ function Alignment({children,year,ttl,place,pj=false}) {
               </svg>
               </div>:ttl}
             </h5>
-<span className='text-sm text-gray-600 italic'>In {place}</span>
-            <p className='text-[15px] text-justify text-gray-700'>{children}</p>
+<span className='text-sm text-gray-600 dark:text-gray-300 italic'>In {place}</span>
+            <p className='text-[15px] text-justify text-gray-700 dark:text-gray-400 '>{children}</p>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ import '@fontsource/inter'
 function ResumePage() {
   return (
     <div>
-        <div className=" bg-white">
+        <div className=" bg-white dark:bg-[rgba(30,41,59)] dark:text-white">
       <div className="w-10/12 lg:w-1/2 m-auto">
         <Navbar/>
         {/* info: hero section */}

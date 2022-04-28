@@ -7,34 +7,33 @@ import { themeSwitching } from '../hooks/theme'
 import { useTheme } from '../themecontext/theme'
 function Navbar() {
     let {mode,toggle}=useTheme()
-    let {navbg}=themeSwitching(mode)
   let history=useRouter()
   const [isOpen, setIsOpen] = useState(false)
   return (
       <>
-    <div className={`bg-[${navbg}] py-5 backdrop-blur-md  z-50  fixed top-0 left-0 w-full shadow-sm`}>
+    <div className={` dark:bg-[rgba(30,41,59,0.48)] dark:text-white py-5 backdrop-blur-md  z-50  fixed top-0 left-0 w-full shadow-sm`}>
         
         <nav className='w-10/12 lg:w-1/2 2xl:w-2/5 m-auto flex justify-between'>
-            <div  className='grid self-center cursor-pointer'>
+            <div  className='grid self-center cursor-pointer dark:text-white '>
             <Link href={'/'}>May</Link>
             </div>
             <ul className='hidden list-none lg:flex flex-row gap-8'>
-            <li className='self-center'>
-            <div  className={`${history.pathname==='/'?'active-link font-bold':''} decorate cursor-pointer`}>
+            <li className='self-center '>
+            <div  className={`${history.pathname==='/'?'active-link font-bold':'dark:text-white'} decorate cursor-pointer`}>
             <Link href={'/'}>Home</Link>
             </div>
             </li>
-                <li className='self-center'>
-                <div  className={`${history.pathname==='/about'?'active-link font-bold':''} decorate cursor-pointer`}>
+                <li className='self-center '>
+                <div  className={`${history.pathname==='/about'?'active-link font-bold':'dark:text-white'} decorate cursor-pointer`}>
                 <Link href={'/about'} >About</Link>
                 </div>
                 </li>
-                <li className='self-center'>
-                <div  className={`${history.pathname==='/cv'?'active-link font-bold':''} decorate cursor-pointer`}>
+                <li className='self-center '>
+                <div  className={`${history.pathname==='/cv'?'active-link font-bold':'dark:text-white'} decorate cursor-pointer`}>
                 <Link href={'/cv'}>Experiment</Link>
                 </div>
                 </li>
-                {/* <li className='self-center'>
+                {/* <li className='self-center '>
                     <div  className={`${history.pathname==='/blogs'?'active-link font-bold':''} decorate cursor-pointer`}>
                     <Link href={'/blogs'}>Blogs</Link>
                     </div>

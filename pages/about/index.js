@@ -6,7 +6,7 @@ import Button from '../../components/button'
 import Footer from '../../components/footer'
 function AboutPage() {
   return (
-    <div>
+    <div className='dark:bg-[rgba(30,41,59)] dark:text-white'>
     <div className="w-10/12 2xl:h-screen lg:w-1/2 2xl:w-2/5 m-auto">
     <Navbar/>
       {/* info: hero section */}
@@ -14,7 +14,7 @@ function AboutPage() {
          <h6 className='text-lg font-medium'>About me</h6>
          <div className=' grid lg:grid-cols-[40%,60%] gap-3 mt-5'>
             <div className=' w-full h-[260px] relative'>
-                <Image alt='my image' src={'/me.JPG'} className='rounded-xl absolute -z-[1] object-cover object-[0%,30%]'  layout='fill'/>
+                <Image alt='my image' src={'/me.JPG'} className='rounded-xl absolute z-0 object-cover object-[0%,30%]'  layout='fill'/>
             </div>
             <article className='grid gap-3 2xl:gap-5 text-[15px] 2xl:text-base'>
                 <p>Hey there, I am MayThanHsu, a passionate developer from Myanmar who loves to learn more and more.</p>

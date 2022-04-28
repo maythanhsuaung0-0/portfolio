@@ -4,7 +4,24 @@ const Theme=createContext()
 const ThemeProvider=({children})=>{
  const [lightmode, setlightmode] = useState(true)
  const toggleMode=()=>{
-     setlightmode(!lightmode)
+    if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        if(lightmode){
+            localStorage.theme = 'light'
+            setlightmode(false)
+        }
+        else{
+            localStorage.theme = 'dark'
+            setlightmode(true)
+        }
+  // Whenever the user explicitly chooses light mode
+  //localStorage.theme = 'light'
+  
+  // Whenever the user explicitly chooses dark mode
+  //localStorage.theme = 'dark'
  }
  return(
      <Theme.Provider value={[lightmode,toggleMode]}>
@@ -18,7 +35,7 @@ const useTheme=()=>{
     return{
         mode:lightmode,
         toggle:toggleMode
-    }
-}
+}}
+
 export {useTheme}
 export default ThemeProvider
