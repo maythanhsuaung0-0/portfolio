@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/navbar'
 import Alignment from '../../components/alignments'
+import Footer from '../../components/footer'
 import '@fontsource/inter'
 function ResumePage() {
   return (
     <div>
-        <div className=" bg-white dark:bg-[rgba(30,41,59)] dark:text-white">
+      <div className=" bg-white dark:bg-[rgba(30,41,59)] dark:text-white">
       <div className="w-10/12 lg:w-1/2 2xl:w-2/5 m-auto">
         <Navbar/>
         {/* info: hero section */}
@@ -39,6 +40,8 @@ function ResumePage() {
 
             </div>
         </div>
+        <Footer/>
+        
       </div>
     </div>
         
