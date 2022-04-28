@@ -6,7 +6,7 @@ function ResumePage() {
   return (
     <div>
         <div className=" bg-white dark:bg-[rgba(30,41,59)] dark:text-white">
-      <div className="w-10/12 lg:w-1/2 m-auto">
+      <div className="w-10/12 lg:w-1/2 2xl:w-2/5 m-auto">
         <Navbar/>
         {/* info: hero section */}
         <div className='pb-5 pt-32'>

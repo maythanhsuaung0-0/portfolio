@@ -9,10 +9,10 @@ export default function Home() {
 
   return (
     <div className={` dark:bg-[#1E293B] dark:text-white`}>
-      <div className={`w-10/12 lg:w-1/2 m-auto `}>
+      <div className={`w-10/12 lg:w-1/2 2xl:w-2/5 m-auto `}>
         <Navbar/>
         {/* info: hero section */}
-        <div className=" pt-28 py-6 2xl:py-14">
+        <div className=" pt-28 py-6 2xl:pt-28">
           <h1 className=" text-6xl leading-[72px] lg:text-7xl lg:leading-[86px]">A Talented Frontend Developer <span className=" hidden lg:inline text-lg lg:pt-4 font-medium">you are looking for</span></h1>
           <div className="text-indigo-600 text-sm flex gap-2 pt-3">
             <div><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
        {/* info:contact me */}
       <div className=" bg-[#0F172A] text-white" id="contact">
-      <div className="w-10/12 lg:w-1/2 m-auto ">
+      <div className="w-10/12 lg:w-1/2 2xl:w-2/5 m-auto ">
 
         <div className=" py-5 grid gap-2">
           <h6 className="text-xl mb-4">Contact Me Now!</h6>
