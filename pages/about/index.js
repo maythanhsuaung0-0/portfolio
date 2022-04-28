@@ -22,6 +22,7 @@ function AboutPage() {
                 <p>I am still a junior developer but I have so many experiment years and can work well with team.Good communicating skill and teamwork are also parts of my skills.</p>
                 <div className='hidden 2xl:block'>
                 <p>I am available for <span className={`text-gray-700 bg-yellow-200`}>HTML</span>, <span className={`text-gray-700 bg-yellow-200`}>CSS</span>, <span className={`text-gray-700 bg-yellow-200`}>Javascript</span> and other libries and frameworks such as <span className={`text-gray-700 bg-yellow-200`}>Reactjs</span>, <span className={`text-gray-700 bg-yellow-200`}>Nextjs</span> and <span className={`text-gray-700 bg-yellow-200`}>Tailwind CSS</span>, <span className={`text-gray-700 bg-yellow-200`}>Bootstrap</span>, <span className={`text-gray-700 bg-yellow-200`}>ChakraUI</span>,<span className={`text-gray-700 bg-yellow-200`}>MaterialUI</span> and also work as a UI/UX designer using <span className={`text-gray-700 bg-yellow-200`}>Figma</span> and <span className={`text-gray-700 bg-yellow-200`}>AdobeXD</span>.</p>
+
                 <p>I love to play guitor and ukulele as a hobby in free times apart from coding.</p>
                 </div>
             </article>
