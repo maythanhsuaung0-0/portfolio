@@ -8,7 +8,7 @@ import { themeSwitching } from "../hooks/theme";
 export default function Home() {
 
   return (
-    <div className={` dark:bg-[#1E293B] dark:text-white`}>
+    <div className={` dark:bg-[#121212] dark:text-[#D2D5DB]`}>
       <div className={`w-10/12 lg:w-1/2 2xl:w-2/5 m-auto `}>
         <Navbar/>
         {/* info: hero section */}
@@ -36,7 +36,7 @@ export default function Home() {
         
       </div>
        {/* info:contact me */}
-      <div className=" bg-[#0F172A] text-white" id="contact">
+      <div className=" bg-[#0f0f0f] text-[#D2D5DB]" id="contact">
       <div className="w-10/12 lg:w-1/2 2xl:w-2/5 m-auto ">
 
         <div className=" py-5 grid gap-2">

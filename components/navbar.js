@@ -11,9 +11,9 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
       <>
-    <div className={` dark:bg-[rgba(30,41,59,0.48)] dark:text-white py-5 backdrop-blur-md  z-50  fixed top-0 left-0 w-full shadow-sm`}>
+    <div className={` dark:bg-[rgba(18,18,18,0.48)] dark:text-[#CDD5E1] py-5 backdrop-blur-md  z-50  fixed top-0 left-0 w-full shadow-sm`}>
         
-        <nav className='w-10/12 lg:w-1/2 2xl:w-2/5 m-auto flex justify-between'>
+        {/* <nav className='w-10/12 lg:w-1/2 2xl:w-2/5 m-auto flex justify-between'>
             <div  className='grid self-center cursor-pointer dark:text-white '>
             <Link href={'/'}>May</Link>
             </div>
@@ -32,13 +32,13 @@ function Navbar() {
                 <div  className={`${history.pathname==='/cv'?'active-link font-bold':'dark:text-white'} decorate cursor-pointer`}>
                 <Link href={'/cv'}>Experiment</Link>
                 </div>
-                </li>
+                </li> */}
                 {/* <li className='self-center '>
                     <div  className={`${history.pathname==='/blogs'?'active-link font-bold':''} decorate cursor-pointer`}>
                     <Link href={'/blogs'}>Blogs</Link>
                     </div>
                 </li> */}
-            </ul>
+            {/* </ul>
             <div className='flex ml-auto lg:ml-0 mr-3 lg:mr-0 h-9 self-center'>
                 {
                     mode?<div onClick={()=>toggle()} className={`w-8 h-8 grid place-items-center   rounded-full cursor-pointer`}>
@@ -59,7 +59,7 @@ function Navbar() {
         </svg>
         </div>
         </nav>
-        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}/> */}
     </div>
   
     </>
